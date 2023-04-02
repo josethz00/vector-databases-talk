@@ -133,6 +133,22 @@ A text becomes an array with numeric values, for example:
 
 ---
 
+## Most popular vector databases
+
+- [Faiss (by Meta)](https://ai.facebook.com/tools/faiss/)
+
+- [Pinecone](https://www.pinecone.io/)
+
+- [Milvus](https://milvus.io/)
+
+- [Postgres (pg_vector)](https://github.com/pgvector/pgvector/)
+
+- [Weaviate](https://www.weaviate.io/)
+
+![bg left 111%](./common-databases.png)
+
+---
+
 # Thank you!
 
 <style>
