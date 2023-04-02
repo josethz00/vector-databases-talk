@@ -92,3 +92,29 @@ A text becomes an array with numeric values, for example:
 - The result of this "translation" is called a **vector** embedding. The vector embedding is a numerical representation of the input text.
 
 - It works not only for text, but also for images, audio, and video. Each of these types of data use a different algorithm to generate the vector embedding.
+
+---
+
+![bg 90%](./rise-of-vector-data-5.png)
+
+---
+
+## Finally, the vector database!
+
+- Now we have a lot of vectors, but these vectors are basically numbers, matrices, they don't mean anything by themselves. So the vector database is used to index these vectors.
+
+- The vector database will index the vectors, leaving the vectors with similar values close to each other, this makes it possible to perform a similarity search in the database.
+
+---
+
+## How the vector database knows which vectors are similar?
+
+1. Math formulas to calculate the distance between vectors in a high-dimensional space
+    - Euclidean distance
+    - Cosine similarity
+    - Manhattan distance
+    - Jaccard similarity
+
+2. Machine learning algorithms
+    - K-nearest neighbors (KNN)
+    - Approximate nearest neighbors (ANN)
