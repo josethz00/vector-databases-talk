@@ -1,6 +1,19 @@
 ---
 marp: true
 math: mathjax
+style: |
+ section.split {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+        "slideheading slideheading"
+        "leftpanel rightpanel";
+    }
+
+    section.split .ldiv { grid-area: leftpanel; }
+    section.split .rdiv { grid-area: rightpanel; }
 ---
 
 # Vector Databases
@@ -19,10 +32,20 @@ Traditional search engines use full-text search, but NLPs like ChatGPT and Bing 
 
 ---
 
+## A split slide
+<!-- _class: split -->
 
+<div class=ldiv>
 
-```sql
-SELECT title, content
-FROM documents
-WHERE search_vector @@ plainto_tsquery('english', 'example search');
-```
+#### Title for the left panel
+- listed item
+- listed item
+- listed item
+</div>
+<div class=rdiv>
+
+#### Title for the right panel
+- listed item
+- listed item
+- listed item
+</div>
