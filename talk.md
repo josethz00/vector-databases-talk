@@ -109,12 +109,40 @@ A text becomes an array with numeric values, for example:
 
 ## How the vector database knows which vectors are similar?
 
-1. Math formulas to calculate the distance between vectors in a high-dimensional space
+1. Query the database using math to find the closest vectors in a high-dimensional space
     - Euclidean distance
     - Cosine similarity
-    - Manhattan distance
-    - Jaccard similarity
 
 2. Machine learning algorithms
     - K-nearest neighbors (KNN)
     - Approximate nearest neighbors (ANN)
+
+3. Indexing
+
+---
+
+<h5> Let's suppose you want to search for the following text: </h5>
+
+```python
+"Best football player in the world"
+```
+
+<span style="font-size: 21px; font-weight: bold">You will very likely get results talking about Messi, because currently (2023) he was elected the best football player in the world. But you will also get results talking about Cristiano Ronaldo, Mbappé, Neymar, etc. as they are also very good football players and considered "the best" by many fans. <span/>
+
+![width:900px](./best-players.png)
+
+---
+
+# Thank you!
+
+<style>
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+</style>
+
+Thank you for your attention. I hope you enjoyed this talk. If you have any questions, please feel free to contact me.
+
+  <a href="https://www.linkedin.com/in/jose-thomaz/" target="_blank" style="margin-right: 20px;"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>@jose-thomaz</a>
+
+  <a href="https://www.twitter.com/josethz00" target="_blank" style="margin-right: 20px;"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i>@josethz00</a>
+
+  <a href="https://github.com/josethz00" target="_blank" style="margin-right: 20px;"><i class="fa fa-github fa-3x" aria-hidden="true"></i>@josethz00</a>
