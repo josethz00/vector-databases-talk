@@ -68,3 +68,27 @@ WHERE search_vector @@ plainto_tsquery('english', 'example search');
 ## Semantic search
 
 ![width:900px](./semantic-search.png)
+
+---
+
+## How does vectorization work?
+
+### NLP Example
+
+- A NLP receives a text as input and returns another text as output. This involves several processing steps, one of them is vectorization.
+
+- In the vectorization process, the **tokens** of the input text are converted into vectors using linear algebra operations. Simplifying:
+
+A text becomes an array with numeric values, for example:
+
+```python
+"learning NLP and AI" ---> [0.9, 0.02, 0.88, 0.1, 0.3]
+```
+
+---
+
+## How does vectorization work?
+
+- The result of this "translation" is called a **vector** embedding. The vector embedding is a numerical representation of the input text.
+
+- It works not only for text, but also for images, audio, and video. Each of these types of data use a different algorithm to generate the vector embedding.
