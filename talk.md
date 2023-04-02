@@ -5,7 +5,7 @@ style: |
  section.split {
     overflow: visible;
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 600px 600px;
     grid-template-rows: 100px auto;
     grid-template-areas: 
         "slideheading slideheading"
@@ -32,20 +32,39 @@ Traditional search engines use full-text search, but NLPs like ChatGPT and Bing 
 
 ---
 
-## A split slide
 <!-- _class: split -->
 
 <div class=ldiv>
 
-#### Title for the left panel
-- listed item
-- listed item
-- listed item
+### Full-text search
+
+- Search for a word or phrase in large amounts of text
+- The search engine returns a list of documents that contain the search term
+
 </div>
+
+
 <div class=rdiv>
 
-#### Title for the right panel
-- listed item
-- listed item
-- listed item
+### Semantic search
+
+- Search for a word or phrase in large amounts of text
+- The search engine will return a list of documents that contain the search term or have a similar meaning
+
 </div>
+
+---
+
+## Full-text search
+
+```sql
+SELECT title, content
+FROM documents
+WHERE search_vector @@ plainto_tsquery('english', 'example search');
+```
+
+---
+
+## Semantic search
+
+![width:900px](./semantic-search.png)
