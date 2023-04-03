@@ -173,6 +173,12 @@ print(similar_words)
 
 ---
 
+## Performing a semantic search in a dataset
+
+Complete code: [https://github.com/josethz00/vector-databases-talk/blob/main/semantic-search.py](semantic-search.py)
+
+---
+
 ## Most popular vector databases
 
 - [Faiss (by Meta)](https://ai.facebook.com/tools/faiss/)
