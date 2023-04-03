@@ -153,6 +153,26 @@ print(similar_words)
 
 ---
 
+## Performing a semantic search in a dataset
+
+```python
+>>> 10 most similar results to "politics", "global", "economy"
+[
+    ('debt', 0.9471450448036194), 
+    ('industry', 0.9427266716957092), 
+    ('conflict', 0.9362503290176392), 
+    ('labor', 0.9333578944206238), 
+    ('scientific', 0.9326208829879761), 
+    ('investment', 0.9326040148735046), 
+    ('capitalism', 0.9312210083007812), 
+    ('participation', 0.9291972517967224), 
+    ('society', 0.9280529618263245), 
+    ('crisis', 0.9253469705581665)
+]
+```
+
+---
+
 ## Most popular vector databases
 
 - [Faiss (by Meta)](https://ai.facebook.com/tools/faiss/)
