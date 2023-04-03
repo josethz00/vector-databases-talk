@@ -133,6 +133,26 @@ A text becomes an array with numeric values, for example:
 
 ---
 
+## Performing a semantic search in a dataset
+
+```python
+# Load the dataset - 2000 first articles
+dataset = load_dataset('openwebtext', split='train[:2000]')
+
+# Preprocess the dataset
+texts = [simple_preprocess(article['text']) for article in dataset]
+# Train a Word2Vec model
+model = Word2Vec(texts, vector_size=200, window=5, min_count=1, workers=4)
+
+# Find the most similar words to "politics", "global", and "economy
+similar_words = model.wv.most_similar(positive=['politics', 'global', 'economy'], topn=10)
+print(similar_words)
+```
+
+- In this code, we are performing a semantic search on the terms "politics", "global", and "economy".
+
+---
+
 ## Most popular vector databases
 
 - [Faiss (by Meta)](https://ai.facebook.com/tools/faiss/)
