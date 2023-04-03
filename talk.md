@@ -99,6 +99,22 @@ A text becomes an array with numeric values, for example:
 
 ---
 
+## Vectorization algorithms
+
+&nbsp;
+
+**Images**: *vgg, resnet, inception, mobilenet, googlenet, etc.*
+
+&nbsp;
+
+**Text**: *word2vec, glove, fasttext, BERT, node2vec, etc.*
+
+&nbsp;
+
+**Audio**: *wav2vec, mxnet, etc.*
+
+---
+
 ## Finally, the vector database!
 
 - Now we have a lot of vectors, but these vectors are basically numbers, matrices, they don't mean anything by themselves. So the vector database is used to index these vectors.
@@ -127,7 +143,7 @@ A text becomes an array with numeric values, for example:
 "Best football player in the world"
 ```
 
-<span style="font-size: 21px; font-weight: bold">You will very likely get results talking about Messi, because currently (2023) he was elected the best football player in the world. But you will also get results talking about Cristiano Ronaldo, Mbappé, Neymar, etc. as they are also very good football players and considered "the best" by many fans. <span/>
+<span style="font-size: 21px; font-weight: bold">You will very likely get results talking about Messi, because currently (2023) he was elected the best football player in the world. But you will also get results talking about Cristiano Ronaldo, Mbappé, Neymar, etc. as they are also very good football players and considered "the best" by many fans. </span>
 
 ![width:900px](./best-players.png)
 
